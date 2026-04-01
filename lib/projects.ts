@@ -379,7 +379,11 @@ export const projects: Project[] = [
   }
 ];
 
-export const projectCount = projects.length;
+function isVisibleProject(project: Project) {
+  return !project.placeholder;
+}
+
+export const projectCount = projects.filter(isVisibleProject).length;
 
 export function localizeProject(project: Project, locale: Locale): LocalizedProject {
   return {
@@ -407,11 +411,15 @@ export function localizeProject(project: Project, locale: Locale): LocalizedProj
 }
 
 export function getLocalizedProjects(locale: Locale) {
-  return projects.map((project) => localizeProject(project, locale));
+  return projects.filter(isVisibleProject).map((project) => localizeProject(project, locale));
 }
 
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);
+}
+
+export function getVisibleProjectBySlug(slug: string) {
+  return projects.find((project) => project.slug === slug && isVisibleProject(project));
 }
 
 export function getLocalizedProjectBySlug(slug: string, locale: Locale) {
@@ -420,9 +428,12 @@ export function getLocalizedProjectBySlug(slug: string, locale: Locale) {
 }
 
 export function getRelatedProjects(slug: string) {
-  return projects.filter((project) => project.slug !== slug).slice(0, 3);
+  return projects.filter((project) => project.slug !== slug && isVisibleProject(project)).slice(0, 3);
 }
 
 export function getRelatedLocalizedProjects(slug: string, locale: Locale) {
-  return projects.filter((project) => project.slug !== slug).slice(0, 3).map((project) => localizeProject(project, locale));
+  return projects
+    .filter((project) => project.slug !== slug && isVisibleProject(project))
+    .slice(0, 3)
+    .map((project) => localizeProject(project, locale));
 }
