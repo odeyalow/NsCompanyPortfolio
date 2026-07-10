@@ -48,6 +48,8 @@ export const dictionary = {
       text: "Открыты к новым проектам, внедрениям и продуктовым задачам.",
       phoneLabel: "Телефон",
       phone: "+7 708 385 8570",
+      emailLabel: "Почта",
+      email: "team@ns-company.kz",
       addressLabel: "Адрес",
       address: "г. Алматы, улица Мамыр 7, дом 14а"
     },
@@ -100,6 +102,8 @@ export const dictionary = {
       text: "Жаңа жобаларға, енгізулерге және өнімдік міндеттерге ашықпыз.",
       phoneLabel: "Телефон",
       phone: "+7 708 385 8570",
+      emailLabel: "Пошта",
+      email: "team@ns-company.kz",
       addressLabel: "Мекенжай",
       address: "Алматы қ., Мамыр 7 көшесі, 14а үй"
     },
@@ -152,6 +156,8 @@ export const dictionary = {
       text: "Open to new projects, implementations, and product work.",
       phoneLabel: "Phone",
       phone: "+7 708 385 8570",
+      emailLabel: "Email",
+      email: "team@ns-company.kz",
       addressLabel: "Address",
       address: "Almaty, Mamyr 7 street, building 14a"
     },

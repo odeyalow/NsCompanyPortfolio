@@ -70,43 +70,44 @@ export const projects: Project[] = [
   {
     slug: "go-market",
     title: same("Go Market"),
-    category: t("Коммерческая платформа", "Коммерциялық платформа", "Commerce platform"),
+    category: t("Вендинг и IoT", "Вендинг және IoT", "Vending and IoT"),
     year: "2026",
     summary: t(
-      "Легкий e-commerce проект с каталогом, быстрым сценарием покупки и современной витриной товаров.",
-      "Каталогы, жылдам сатып алу сценарийі және заманауи тауар витринасы бар жеңіл e-commerce жоба.",
-      "A lightweight e-commerce project with a catalog, fast purchase flow, and a modern product showcase."
+      "Кроссплатформенная панель управления вендинговыми автоматами и умными холодильниками: веб-версия и приложения для Android и iOS.",
+      "Вендинг автоматтары мен смарт тоңазытқыштарды басқаруға арналған кроссплатформалық панель: веб-нұсқа және Android пен iOS қосымшалары.",
+      "A cross-platform control panel for vending machines and smart fridges: a web version plus Android and iOS applications."
     ),
     description: t(
-      "Временное описание для маркетплейс-проекта. Страница уже подготовлена под реальные материалы, пользовательские сценарии и фактические результаты.",
-      "Маркетплейс жобасына арналған уақытша сипаттама. Бет нақты материалдар, пайдаланушы сценарийлері және нәтижелер үшін дайын.",
-      "Temporary copy for a marketplace project. The page is already prepared for real materials, user flows, and actual results."
+      "Go Market объединяет управление сетью торговых устройств в одном интерфейсе: товары, партии, инвентаризация, устройства, транзакции, статистика и подписки. Веб-версия и мобильные приложения собираются из одного кодбейза на React Native и Expo.",
+      "Go Market сауда құрылғылары желісін басқаруды бір интерфейсте біріктіреді: тауарлар, партиялар, түгендеу, құрылғылар, транзакциялар, статистика және жазылымдар. Веб-нұсқа мен мобильді қосымшалар React Native және Expo негізіндегі бір кодбейзден жиналады.",
+      "Go Market brings the management of a device network into one interface: products, batches, inventory, devices, transactions, statistics, and subscriptions. The web version and the mobile apps are built from a single React Native and Expo codebase."
     ),
-    status: "Draft",
-    placeholder: true,
+    status: "Published",
     accent: "#5eead4",
+    siteUrl: "https://go-market.kz",
     icon: goMarketIcon,
-    tags: ["Marketplace", "Web App", "UI System"],
+    tags: ["Vending", "Cross-platform", "Admin Panel"],
     facts: [
-      { label: t("Тип", "Түрі", "Type"), value: t("B2C / Marketplace", "B2C / Marketplace", "B2C / Marketplace") },
-      { label: t("Фокус", "Фокус", "Focus"), value: t("Каталог и покупка", "Каталог және сатып алу", "Catalog and checkout") },
-      { label: t("Статус", "Күйі", "Status"), value: t("Контент дополняется", "Контент толықтырылуда", "Content is being updated") }
+      { label: t("Платформы", "Платформалар", "Platforms"), value: same("Web, Android, iOS") },
+      { label: t("Стек", "Стек", "Stack"), value: same("React Native + Expo") },
+      { label: t("Разделы панели", "Панель бөлімдері", "Panel sections"), value: same("9") },
+      { label: t("Видео", "Видео", "Video"), value: t("Просмотр камер", "Камераларды көру", "Camera streaming") }
     ],
     sections: [
       {
         title: t("Контекст", "Контекст", "Context"),
         text: t(
-          "Go Market оформлен как гибкая витрина для товаров и акций. Пока нет финальных бизнес-данных, поэтому кейс заполнен нейтральным временным текстом без выдуманных метрик.",
-          "Go Market тауарлар мен акцияларға арналған икемді витрина ретінде берілген. Соңғы бизнес-деректер жоқ болғандықтан, кейс ойдан шығарылған метрикаларсыз уақытша мәтінмен толтырылған.",
-          "Go Market is positioned as a flexible showcase for products and promotions. Since final business data is not available yet, the case uses neutral temporary copy without invented metrics."
+          "Go Market закрывает операционные задачи владельца сети торговых устройств: заведение товаров и партий, инвентаризация, подключение автоматов, разбор транзакций и статистики. Доступ разделен по ролям: администратор сервиса управляет пользователями и подписками, владелец точек работает с товарами и остатками.",
+          "Go Market сауда құрылғылары желісі иесінің операциялық міндеттерін жабады: тауарлар мен партияларды енгізу, түгендеу, автоматтарды қосу, транзакциялар мен статистиканы талдау. Қолжетімділік рөлдер бойынша бөлінген: сервис әкімшісі пайдаланушылар мен жазылымдарды басқарады, нүкте иесі тауарлармен және қалдықтармен жұмыс істейді.",
+          "Go Market covers the operational needs of a device network owner: managing products and batches, running inventory, connecting machines, and reviewing transactions and statistics. Access is split by role: the service administrator manages users and subscriptions, while the location owner works with products and stock."
         )
       },
       {
-        title: t("Следующий шаг", "Келесі қадам", "Next step"),
+        title: t("Что выделяет проект", "Жобаның ерекшелігі", "What stands out"),
         text: t(
-          "После получения подробностей сюда можно добавить структуру каталога, сценарии оформления заказа, интеграции и реальные показатели продукта.",
-          "Толық ақпарат алынғаннан кейін мұнда каталог құрылымын, тапсырыс беру сценарийлерін, интеграцияларды және нақты көрсеткіштерді қосуға болады.",
-          "Once more details are available, the page can be expanded with catalog structure, checkout flows, integrations, and real product metrics."
+          "Один кодбейз обслуживает сразу три платформы: браузер, Android и iOS. Наиболее показательная часть - просмотр камер устройств, реализованный под каждую платформу отдельно: в вебе это WASM-плеер, на телефонах - нативный модуль поверх камерного SDK, подключенный через config plugins Expo.",
+          "Бір кодбейз үш платформаны бірден қамтиды: браузер, Android және iOS. Ең көрнекті бөлігі - құрылғы камераларын көру, ол әр платформаға бөлек жасалған: вебте бұл WASM-плеер, телефондарда - Expo config plugins арқылы қосылған камера SDK үстіндегі нативті модуль.",
+          "A single codebase serves three platforms at once: browser, Android, and iOS. The most telling part is device camera streaming, implemented separately per platform: a WASM player on the web, and a native module on top of the camera SDK wired in through Expo config plugins on phones."
         )
       }
     ]

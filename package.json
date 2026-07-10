@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "build:static-html": "node ./scripts/generate-static-site.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."

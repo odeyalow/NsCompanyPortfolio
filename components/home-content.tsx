@@ -105,6 +105,17 @@ export function HomeContent() {
                 </div>
                 <div className="surface-soft rounded-[24px] p-5">
                   <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-secondary)]">
+                    {t.contact.emailLabel}
+                  </p>
+                  <a
+                    href={`mailto:${t.contact.email}`}
+                    className="mt-3 block text-base font-medium text-[var(--text-primary)] transition-opacity hover:opacity-70"
+                  >
+                    {t.contact.email}
+                  </a>
+                </div>
+                <div className="surface-soft rounded-[24px] p-5 sm:col-span-2">
+                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-secondary)]">
                     {t.contact.addressLabel}
                   </p>
                   <p className="mt-3 text-base font-medium leading-7 text-[var(--text-primary)]">
